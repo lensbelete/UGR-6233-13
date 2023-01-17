@@ -1,0 +1,361 @@
+/* style for every page*/
+@media(max-width:900px){
+  body{
+    font-size:0.8rem;
+  }
+  .main-content{
+    flex-direction:column;
+    margin-top: 25%;
+  }
+  header{
+    height:5%;
+    background-size: 50%;
+    margin-bottom:50%;
+  }
+  .contact-ways{
+    flex-direction: column;
+  }
+  .main-body{
+    display:flex;
+    flex-direction: column;
+  }
+  .login-main-content{
+    flex-direction: column;
+  }
+}
+@media(max-width: 480px){
+  body{
+    font-size:0.6 rem;
+  }
+  .address-container, .privacy-policy, .connect{
+    flex-direction:column;
+  }
+  .container-event-description{
+    flex-direction: column;
+  }
+  .main-content{
+    margin-top: 175px;
+  }
+  .footer-container{
+    flex-direction: column;
+  }
+ 
+  header{
+    height:5%;
+    background-size: 50%;
+    margin-bottom:50%;
+  }
+  .contact-ways{
+    display:grid;
+    grid-template-columns: auto;
+  }
+  .choice-nav{
+    flex-direction: column;
+  }
+  .login-main-content{
+    flex-direction: column;
+  }
+  .login-credentials{
+    width:50px;
+  }
+
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: mintcream;
+  font-family: Helvetica, sans-serif, arial;
+  display: grid;
+  height: 100%;
+  width: 100%;
+  line-height:200%;
+  grid-template-rows:repeat(auto-fill,minmax(auto 1fr auto));
+  grid-template-columns: 100%;
+}
+header {
+  position: fixed;
+  left: 0;
+  top:0;
+  background-image: url("image/header.jpg");
+  background-size: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 25%;
+  overflow: hidden;
+  background-size: 100%;
+  margin-bottom:40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.navigation {
+  width: 100%;
+  position: fixed;
+  margin-top: 9%;
+  background-color: #c7a003;
+  vertical-align: middle;
+  align-content: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-bottom: 100%;
+}
+button {
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
+  font-size: 1.2rem;
+  color: black;
+  background-color: #c7a003;
+  border: none;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.search-bar {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+  margin-left: 20px;
+  font-size: 16px;
+  max-width: 350px;
+}
+
+footer {
+  padding: 1rem;
+  bottom: 0;
+  left: 0;
+  margin-top: 20%;
+  background-color: #3d4e17;
+  text-align: center;
+  width: 100vw;
+  height:auto;
+}
+.footer-container {
+  display: flex;
+}
+.address-container, .privacy-policy, .connect{
+  flex:1;
+  color:white;
+}
+.instagram-button:hover, .twitter-button:hover, .linkedin-button:hover{
+  opacity:0.8;
+}
+.instagram-button:active, .twitter-button:active, .linkedin-button:active{
+  opacity:0.5;
+}
+button:hover{
+  cursor: pointer;
+  opacity:0.8;
+}
+button:active{
+  opacity:0.5;
+}
+/* style for the homepage*/
+
+.main-content {
+  margin-top: 150px;
+  text-align: justify;
+  display:flex;
+  justify-content:space-around;
+}
+.container-business-description{
+  flex:1;
+  padding: 2% 4% 2% 4%;
+  align-items: center;
+  
+}
+.video-container{
+  flex:1;
+  padding: 2% 4% 2% 4%;
+}
+.container-event-description{
+  display:flex;
+  justify-content: space-between;
+}
+.event-description,.company-message{
+  flex:1;
+  padding: 1% 2% 1% 2%;
+}
+
+.video-description{
+  margin-top:0;
+  padding:5%;
+}
+.business-description{
+  margin-bottom: 5%;
+  padding: 5%;
+}
+.logo{
+  border-radius: 5%;
+}
+
+/* contact page style*/
+
+.contact-main-content{
+  margin-top: 150px;
+  display: grid;
+  grid-template-rows: auto auto;
+}
+.contact-ways{
+  display:flex;
+  justify-content: space-between;
+}
+.contact-body{
+  background-color:white;
+}
+.staff-message{
+  background-color: #151f1e;
+  margin-left:20%;
+  margin-right: 20%;
+  margin-top:50px;
+  margin-bottom: 5%;
+  border-radius: 10%;
+  padding:10%;
+  color:white;
+  text-align:justify;
+}
+.collaboration-request{
+  flex:1;
+  background-color: #ede599;
+  width:40%;
+  padding:3%;
+  border-radius: 5%;
+  margin-bottom: 2%;
+  margin:5%;
+}
+.customer-support{
+  flex:1;
+  background-color: #ede599;
+  width:40%;
+  padding:3%;
+  border-radius: 5%;
+  margin-bottom: 2%;
+  margin:5%;
+}
+/* about page style */
+.about-body{
+  background-color: beige;
+}
+.about-main-content{
+  margin-top:150px;
+  display:flex;
+  flex-direction:column ;
+  background-color: #e2c283;
+  margin:10%;
+  margin-top: 200px;
+  border-radius: 25%;
+}
+.about-title{
+  text-align:center;
+}
+.main-body{
+
+  display:flex;
+  margin:15%;
+  margin-top: 5%;
+}
+.intro{
+  text-align: center;
+  width:100%;
+}
+.about-description{
+  flex:1;
+  text-align: justify;
+  padding:5%;
+  padding-top:2%;
+}
+.message{
+  flex:1;
+  text-align: justify;
+  padding:5%;
+  padding-top:2%;
+}
+.audio{
+  width:100%;
+}
+/* stor page style */
+.store-main-content{
+  display:flex;
+  flex-direction: column;
+  margin-top: 180px;
+}
+.choice-nav{
+  display:flex;
+}
+.category{
+  background-color: lightgreen;
+  margin:30px;
+  padding:20px;
+}
+.product-display{
+  margin:30px;
+}
+.store-search-bar{
+  display:inline-block;
+  padding: 5px;
+  margin-left:20px;
+  width:500px;
+}
+.website-name{
+  display:inline-block;
+}
+.store-nav{
+  margin-left:30px;
+}
+/* login page style*/
+.login-body{
+  background-color: #c6a3a0;
+}
+.login-main-content{
+  display:flex;
+  background-color: #f7f1f0;
+  margin-left:20%;
+  margin-right:20%;
+  margin-top: 20%;
+  margin-bottom: 20%;
+  width:60%;
+  height:70%;
+  height:auto;
+}
+.logo-container{
+  flex:1;
+}
+.login-form{
+  flex:1;
+}
+.login-credentials{
+  width:100%;
+  height:auto;
+  padding: 2%;
+}
+.btn{
+  padding:5%;
+  border:none;
+  background-color: #262220;
+  color:white;
+  border-radius: 2%;
+}
+.login{
+  margin-top:15%;
+  align-content: center;
+}
+.h-tag{
+  text-align: center;
+}
+/* your profile page style*/
+.yourProfile-main-content{
+  display: flex;
+  flex-direction: column;
+  margin-top: 170px;
+  padding:5%;
+}
+
