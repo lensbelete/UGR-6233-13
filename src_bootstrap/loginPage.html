@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Login Page</title>
+    <meta name="author" content="Lensa Belete" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="a page to fill out the credentials required to access the profile page"
+    />
+    <meta name="themecolor" content="green" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body style="background-color: #c6a3a0">
+    <main class="gradient-custom">
+      <div class="container py-5 h-100"></div>
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="row container">
+          <div class="col-lg-6 m-0">
+            <img
+              width="100%"
+              height="100%"
+              src="image/logo.png"
+              alt="logo of the website"
+            />
+          </div>
+          <div class="col-lg-5 p-5" style="background-color: beige">
+            <div class="login-form">
+              <div>
+                <h2 class="text-center">EFarm</h2>
+              </div>
+              <div class="login">
+                <img
+                  class="avatar"
+                  src="image/avatar.jpg"
+                  alt="unisex user avatar"
+                  width="10%"
+                />
+                <table class="table">
+                  <tr>
+                    <td>Enter User Name:</td>
+                    <td>
+                      <input
+                        width="50%"
+                        type="text"
+                        placeholder="Username"
+                        id="email"
+                        class="form-control"
+                        aria-label="username"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Enter Password:</td>
+                    <td>
+                      <input
+                        width="50%"
+                        type="password"
+                        placeholder="password"
+                        id="pwd1"
+                        class="form-control"
+                        aria-label="password"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>
+                      <input
+                        width="50%"
+                        type="submit"
+                        value="Reset"
+                        onClick="clearFunc()"
+                        class="btn text-white"
+                        style="background-color: #262220"
+                      />
+                      <input
+                        width="50%"
+                        type="submit"
+                        value="Login"
+                        class="btn text-white"
+                        onClick="login()"
+                        style="background-color: #262220"
+                      />
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
